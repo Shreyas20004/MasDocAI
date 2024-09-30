@@ -1,0 +1,2 @@
+# MasDocAI
+Aicdex solution attempt
