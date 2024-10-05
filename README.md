@@ -1,6 +1,3 @@
-Here is the updated README with your profile link added:
-
----
 
 # MasDocAI
 
@@ -8,7 +5,7 @@ Aicdex solution attempt
 
 ## Project Setup
 
-This project is built using Vite.js for a fast development experience.
+This project is built using Vite.js for frontend development and Django for the backend.
 
 ### Prerequisites
 
@@ -16,6 +13,9 @@ Before you begin, ensure you have met the following requirements:
 
 - Node.js (v12.0.0 or later)
 - npm (v6.0.0 or later) or yarn (v1.22.0 or later)
+- Python (v3.8 or later)
+- Pipenv
+
 
 ### Installation
 
@@ -26,7 +26,7 @@ git clone https://github.com/Shreyas20004/MasDocAI.git
 cd MasDocAI
 ```
 
-2. Install the dependencies:
+2. Install the frontend dependencies:
 
 ```bash
 npm install
@@ -34,9 +34,15 @@ npm install
 yarn install
 ```
 
+3. Install the backend dependencies:
+
+```bash
+pipenv install
+```
+
 ### Development
 
-To start the development server, run:
+To start the frontend development server, run:
 
 ```bash
 npm run dev
@@ -44,11 +50,27 @@ npm run dev
 yarn dev
 ```
 
-The development server will be running at `http://localhost:3000`.
+The frontend development server will be running at `http://localhost:3000`.
+
+To start the backend development server, run:
+
+```bash
+pipenv run python manage.py runserver
+```
+
+The backend development server will be running at `http://localhost:8000`.
+
+### Activate Pipenv Shell
+
+To activate the Pipenv virtual environment shell, run:
+
+```bash
+pipenv shell
+```
 
 ### Building for Production
 
-To build the project for production, run:
+To build the frontend project for production, run:
 
 ```bash
 npm run build
@@ -70,19 +92,17 @@ yarn serve
 
 This will serve the contents of the `dist` folder at `http://localhost:5000`.
 
-### Linting
+### Backend Management
 
-To lint the project, run:
+To manage the backend, use Django's management commands. For example, to apply migrations:
 
 ```bash
-npm run lint
-# or
-yarn lint
+pipenv run python manage.py migrate
 ```
 
 ### Formatting
 
-To format the code, run:
+To format the frontend code, run:
 
 ```bash
 npm run format
@@ -90,9 +110,7 @@ npm run format
 yarn format
 ```
 
-### Author
+## Author
 
 [Shreyas20004](https://github.com/Shreyas20004)
-
----
 
